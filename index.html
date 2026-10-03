@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h2>Course Registration Form</h2>
+        
+        <form action="">
+            <h4>Personal Details</h4>
+            <table>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" placeholder="Ex:Bhagya" required></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td><input type="text" placeholder="Ex:Dadgi" required></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile Number</label></td>
+                    <td><input type="tel" placeholder="9798988788" required></td>    
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" required></td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Password</label></td>
+                    <td><input type="password" required></td>
+                </tr>
+                <tr>
+                    <td><label>DOB</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label>AGE</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="Gender" id="male" value="Male"><label for="male">Male</label>
+                        <input type="radio" name="Gender" id="female" value="Female"><label for="female">Female</label>
+                        <input type="radio" name="Gender" id="others" value="Others"><label for="others">Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Select Country</label></td>  
+                    <td>
+                        <select>
+                            <option value="INDIA">INDIA</option>
+                            <option value="USA">USA</option>
+                            <option value="RUSSIA">RUSSIA</option>
+                            <option value="UAE">UAE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload Picture</td>
+                    <td><input type="file"></td>
+                </tr>
+            </table>
+
+            <h4>Course Details</h4>
+            <table>
+                <tr>
+                    <td><label>Select Course</label></td>
+                    <td>
+                        <select>
+                            <option value="Python full stack">Python full stack</option>
+                            <option value="Java full stack">Java full stack</option>
+                            <option value="data analytics">Data analytics</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Delivery mode</label></td>
+                    <td>
+                        <input type="radio" name="Delivery_mode" id="online" value="ONLINE"><label for="online">ONLINE</label>
+                        <input type="radio" name="Delivery_mode" id="offline" value="OFFLINE"><label for="offline">OFFLINE</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Institute Name</label></td>
+                    <td><input type="text"></td>
+                </tr> 
+                <tr>
+                    <td><label>Choose Your coding knowledge level:</label></td>
+                    <td><input type="range" value="1" min="1" max="100"></td>
+                </tr> 
+                <tr>
+                    <td>Comments</td>
+                    <td><textarea rows="4"></textarea></td>
+                </tr>
+            </table>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </div>
+
+</body>
+</html>

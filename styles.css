@@ -1,0 +1,174 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    /* Soft Pastel Lavender/Blue Gradient Background */
+    background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 50%, #fce7f3 100%);
+    color: #334155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Card Container */
+.form-container {
+    background: #ffffff;
+    padding: 40px 44px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -15px rgba(148, 163, 184, 0.3);
+    max-width: 620px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Main Heading */
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #4c1d95; /* Deep Pastel Violet */
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+/* Section Subheadings */
+h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #6b21a8;
+    background-color: #f5f3ff; /* Soft Pastel Purple Badge Accent */
+    padding: 8px 14px;
+    border-radius: 8px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+/* Table Formatting */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+}
+
+td {
+    padding: 10px 4px;
+    vertical-align: middle;
+}
+
+td:first-child {
+    width: 38%;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+/* Input Fields, Select, and Textarea Styling */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px 16px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #1e293b;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Single-Color Sparkle & Glow Effect (Soft Purple) */
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #ffffff;
+    border-color: #a855f7;
+    animation: single-sparkle-glow 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes single-sparkle-glow {
+    0% {
+        box-shadow: 
+            0 0 0 3px rgba(168, 85, 247, 0.25),
+            0 0 8px rgba(168, 85, 247, 0.4);
+    }
+    100% {
+        box-shadow: 
+            0 0 0 5px rgba(168, 85, 247, 0.4),
+            0 0 18px rgba(168, 85, 247, 0.7);
+    }
+}
+
+::placeholder {
+    color: #94a3b8;
+}
+
+td label {
+    margin-right: 14px;
+    font-size: 0.9rem;
+    color: #475569;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #9333ea;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+input[type="range"] {
+    accent-color: #9333ea;
+    cursor: pointer;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 85px;
+}
+
+/* Pastel Gradient Submit Button */
+button[type="submit"] {
+    width: 100%;
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 24px;
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.3);
+    transition: all 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #9333ea 0%, #6d28d9 100%);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);
+    transform: translateY(-1px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
